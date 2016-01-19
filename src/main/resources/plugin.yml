@@ -1,0 +1,15 @@
+name: FishFilter
+version: 1.0
+main: pl.panryba.mc.filter.Plugin
+commands:
+    limit:
+        description: Server limits access and management
+        permission: fishfilter.limit.manage
+        usage: |
+            /<command> [<value>]
+            Example: /<command> - get the current maximum number of online players limit
+            Example: /<command> 100 - set the current limit to 100
+permissions:
+    fishfilter.limit.manage:
+        description: Allows managing server limit (maximum number of players)
+        default: op
